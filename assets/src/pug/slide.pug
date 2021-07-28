@@ -1,0 +1,20 @@
+
+section.section-slide.py-5
+    .container.py-5
+        +title("Oue Clients Testimonials", "What People Say", "Sed ut perspiciatis unde omnis iste natus error sit accusantium doloremque, eaque ipsa quae ab illo inventore.Sed ut perspiciatis unde omnis iste natus error sit.")                    
+        #carouselExampleIndicators.carousel.slide(data-ride='carousel').pt-5
+            ol.carousel-indicators
+                li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+                li(data-target='#carouselExampleIndicators' data-slide-to='1')
+            .carousel-inner
+                .carousel-item.active
+                    .row 
+                        +slide("Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vel esse voluptates molestias? ", "./assets/images/testi1.jpg", "Alexander Sakura")
+                        +slide("Pellen tesque libero ut justo", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vel esse voluptates molestias? ", "./assets/images/testi2.jpg", "Johnson William")
+                        +slide("Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vel esse voluptates molestias? ", "./assets/images/testi3.jpg", "John Wilson")
+                            
+                .carousel-item
+                    .row
+                        +slide("Pellen tesque libero ut justo", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vel esse voluptates molestias? ", "./assets/images/testi3.jpg", "John Wilson")
+                        +slide("Lorem ipsum dolor sit amet", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vel esse voluptates molestias? ", "./assets/images/testi1.jpg", "Alexander Sakura")
+                        +slide("Pellen tesque libero ut justo", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vel esse voluptates molestias? ", "./assets/images/testi2.jpg", "John Wilson")

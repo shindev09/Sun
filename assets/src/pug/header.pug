@@ -1,0 +1,27 @@
+header.header
+    .container
+        nav.header-nav
+            .nav-logo
+                a(href='index.html')
+                    span E
+                    p xecution
+            .nav-menu
+                label.navbar(for='menu-toggle')
+                    i.fas.fa-bars
+                input#menu-toggle(type='checkbox')
+                ul.nav-list
+                    li.nav-item.active
+                        a(href='') Home
+                    li.nav-item
+                        a(href='') About
+                    li.nav-item
+                        a(href='') Services
+                    li.nav-item
+                        a(href='') Pages
+                    li.nav-item
+                        a(href='') Contact
+                    li.nav-item.nav-search
+                        input.input-search(type='text' placeholder='Enter keyword')
+                        i.fas.fa-search.icon-search
+                    li.nav-item.nav-icon
+                        i.far.fa-moon

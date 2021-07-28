@@ -1,0 +1,89 @@
+mixin title (h5, h3, p)
+        .row.justify-content-center.align-items-center 
+            .col-md-6 
+                h5.header-title=h5
+                h3.header-title=h3
+            .col-md-6
+                p.text-secondary=p
+
+mixin brand (src)
+    .col-lg-2.col-md-2.col-sm-4.col-6.logo-company.pt-5 
+        a(href="#")
+            img.img-fluid(src=src, alt="logo")
+
+mixin services (src, span, h4)
+    .col-lg-4.services-content
+        .services-item 
+            img.img-fluid(src=src, alt="img")
+            span=span
+            h4=h4
+            p.text-secondary Sed ut perspiciatis unde omnis iste natus sit accusantium doloremque laudantium, totam rem aperiam
+
+mixin creative (src, name, text)
+    .col-lg-3.col-sm-6.mt-5
+        .creative-item 
+            img.img-fluid(src=src, alt="img")
+            .creative-info
+                .creative-info-icon 
+                    a(href="")
+                        i.fab.fa-facebook-f
+                    a(href="")
+                        i.fab.fa-twitter
+                    a(href="")
+                        i.fab.fa-google-plus-g
+            .creative-content
+                a(href="")= name 
+                p.text-secondary= text
+
+mixin slide (q, text, src, name)
+    .col-lg-4.mt-5
+        .slide-item 
+            .quote 
+                blockquote=q
+                p.text-white=text
+            .author.pt-4 
+                img(src=src alt='slide')
+                .author-content
+                    h4.text-white=name 
+                    p.text-white Example City
+
+mixin news (src, a, p, date)
+    .col-lg-6.mt-5
+        .news-item 
+            .row.align-items-center
+                .col-sm-6.px-0 
+                    img.img-fluid(src=src)
+                .col-sm-6.px-0 
+                    .news-content 
+                        a(href="#")=a
+                        p.text-secondary.py-3=p
+                        .news-date 
+                            p=date
+                            i.fas.fa-plus
+
+mixin footer (h4, p1, p2, p3, p4)
+    h4=h4
+    ul.footer-list
+        li.footer-item 
+            a(href="#")
+                i.fas.fa-angle-right
+                p=p1
+        li.footer-item 
+            a(href="#")
+                i.fas.fa-angle-right
+                p=p2
+        li.footer-item 
+            a(href="#")
+                i.fas.fa-angle-right
+                p=p3
+        li.footer-item 
+            a(href="#")
+                i.fas.fa-angle-right
+                p=p4
+
+mixin footer-info(i, a, p) 
+    .col-lg-4
+        i=i
+        .footer-info
+            a(href="#")=a
+            p=p

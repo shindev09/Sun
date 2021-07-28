@@ -1,0 +1,29 @@
+.section-companny{
+	background: url(../../images/bg1.png) no-repeat center;
+	background-size: cover;
+	background-color: $bg-dark;
+	.img-fluid{
+		display: block;
+		width: 100%;
+		border-radius: 8px;
+	}
+	.text-company{
+		padding-top: 20px;
+		border-top: 1px solid rgba(255, 255, 255, 0.2);
+	}
+	.btn-company{
+		color: $color-primary;
+		@include flexBox(flex-start);
+		text-decoration: none;
+		i{
+			font-size: 2rem;
+		}
+		span{
+			padding-left: 10px;
+		}
+		&:hover{
+			color:$color-icon;
+			transition: all 0.5s;
+		}
+	}
+}

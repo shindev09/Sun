@@ -1,0 +1,154 @@
+
+/* tablet width >= 740px and width < 1024px */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+	.layer{
+        min-height: 75vh;
+		.main-content{
+			min-height: 75vh;
+		}
+    }
+}
+
+@media only screen and (max-width: 768px) {
+	.nav-logo {
+		a {
+			font-size: 22px;
+			width: 230px;
+		}
+		}
+		.nav-menu {
+			overflow: hidden;
+			position: relative;
+			top: -12px;
+			right: 5%;
+			z-index: 10;
+			display: flex;
+			width: 40px;
+			.nav-list {
+				display: none;
+				padding-left: 0px;
+				display: none;
+				flex-direction: column;
+				position: fixed;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				background-color: #222;
+				transition: all 0.5s;
+				.nav-item {
+					list-style-type: none;
+					margin: 0;
+					text-align: center;
+					a {
+						padding: 5px 7px;
+						color: $text-white;
+						margin: 0px 2px 0px 2px;
+						text-decoration: none;
+						display: inline-block;
+						padding: 15px 17px;
+						&:hover {
+							color: $color-primary;
+							transition: 0.3s ease;
+						}
+					}
+				}
+			}
+		}
+		
+		.navbar {
+			z-index: 11;
+			display: block;
+			position: absolute;
+			top: 20px;
+			right: 10%;
+			i {
+				cursor: pointer;
+				font-size: 25px;
+				color: #fff;
+				z-index: 11;
+				padding: 8px;
+				border-radius: 10px;
+			}
+		}
+		#menu-toggle {
+			display: block;
+			&:checked {
+				+ {
+					.nav-list {
+						display: flex;
+					}
+				}
+			}
+		}
+}
+//- bo vao mixin
+@media only screen and (min-width: 576px) and (max-width: 768px){ 
+   .main-title h4{
+	   font-size: 38px;
+   }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 576px) {
+	.layer .main-content .main-title {
+		margin-top: 9rem;
+		h4{
+			font-size: 18px;
+		}
+		p{
+			font-size: 14px;
+		}
+		a{
+			display: none;
+		}
+	}
+
+	.about-sticker-content{
+		padding-left: 20px;
+	}
+
+	.section-creative .creative-item:hover .creative-info {
+		top: 72%;
+	}
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) { 
+    .layer .main-content .main-title {
+		margin-top: 9rem;
+		h4{
+			font-size: 18px;
+		}
+		p{
+			font-size: 14px;
+		}
+		a{
+			display: none;
+		}
+	}
+
+	.about-sticker-content{
+		padding-left: 20px;
+	}
+
+	.section-creative .creative-item:hover .creative-info {
+		top: 64%;
+	}
+}
+
+  
+@media only screen and (min-width: 425px) and (max-width: 576px) {
+    .section-creative .creative-item:hover .creative-info {
+		top: 72%;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width:576px){
+	.layer{
+		min-height: 41vh ;
+		.main-content{
+			min-height: 41vh;
+		}
+    }
+}
+  

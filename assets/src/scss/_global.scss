@@ -1,0 +1,62 @@
+html{
+	scroll-behavior: smooth;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+//button 
+.btn-main{
+	@include font(15px,500);
+	padding: 8px 14px;
+	background-color: $color-primary;
+	color: $text-white;
+	border-radius: 20px;
+	padding: 13px 30px;
+	&:hover{
+		background-color: $color-icon;
+		color: $text-white;
+		text-decoration: none;
+		transition: all 0.5s;
+	}
+}
+
+//button-to-top
+.btn-top{
+	position: fixed;
+    bottom: 35px;
+    right: 15px;
+    z-index: 9;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+	line-height: 40px;
+    background: $color-primary;
+    border-radius: 4px;
+    padding: 0;
+	text-align: center;
+	&:hover{
+		color: $color-primary;
+		background-color: $text-white;
+		transition: 0.5s all;
+	}
+}
+
+.header-title{
+	color: $text-white;
+}
+
+h5{
+	font-size: 18px;		
+}
+
+h3{
+	@include font(42px,800);
+}

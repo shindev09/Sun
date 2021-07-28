@@ -1,0 +1,39 @@
+.section-news{
+	background-color: $bg-dark;
+	.news-item{
+		border: 1px solid $border;
+		padding: 0 10px;
+		.news-content{
+			padding: 30px;
+			a{	
+				@include font(1.4rem,500);
+				color: $text-white;
+				text-decoration: none;
+				&:hover{
+					color: $color-icon;
+					transition: all 0.5s;
+				}
+			}
+			.news-date {
+				color: $text-white;
+				@include flexBox(center);
+				p {
+					font-weight: 600;
+					margin: 0;
+				}
+				i{
+					margin-left: auto;
+					border-radius: 50%;		
+					background-color: $color-icon;
+					padding: 5px;
+					font-weight: 200;
+					cursor: pointer;
+					&:hover{
+						background-color: $color-primary;
+						transition: all 0.5s ease;
+					}
+				}
+			}
+		}
+	}
+}

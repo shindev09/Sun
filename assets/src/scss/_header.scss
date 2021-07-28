@@ -1,0 +1,120 @@
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: $bg-dark;
+	z-index: 10;
+}
+
+.header-nav {
+	@include flexBox(space-between);
+}
+
+.nav-logo {
+	a {
+		@include flexBox(center);
+		@include font(22px,800);
+        text-transform: uppercase;
+        text-decoration: none !important;
+		span {
+            color: $color-primary;
+            font-size: 35px;
+		}
+        p{
+            color: $text-white;
+            margin: 0;
+            &:hover {
+                color: $color-primary;
+                transition: 0.5s all;
+            }
+        }   
+	}
+}
+
+.nav-menu {
+	@include flexBox(space-evenly);
+	ul {
+		list-style: none;
+	}
+}
+
+#menu-toggle{
+	display: none !important;
+}
+
+.nav-list {
+	@include flexBox(space-around);
+    margin: 0;
+	.nav-item {
+		padding: 18px 14px;
+		position: relative;
+        list-style: none;
+		a {
+			@include font(16px,600);
+			color: $text-white;
+			display: block;
+			text-decoration: none;
+			text-transform: capitalize;
+			transition: all 0.3s;
+		}
+	}
+	.active {
+		a {
+			color: $color-primary;
+			&::before {
+				content: "";
+				position: absolute;
+				left: 15%;
+				right: 15%;
+				bottom: 17%;
+				border: 1px solid $color-primary;
+				display: block;
+			}
+		}
+	}
+}
+
+.nav-search {
+	position: relative;
+}
+
+.input-search {
+	width: 100%;
+	padding: 10px 35px 10px 15px;
+	border-radius: 30px;
+	outline: none;
+}
+
+.icon-search {
+	position: absolute;
+	top: 32px;
+	right: 40px;
+	color: $color-primary;
+}
+
+.nav-item {
+	a {
+		&::before {
+			content: "";
+			position: absolute;
+			left: 15%;
+			right: 15%;
+			bottom: 17%;
+			border: 1px solid  $color-primary;
+			display: none;
+		}
+		&:hover {
+			&::before {
+				display: block;
+			}
+			color: $color-primary;
+		}
+	}
+}
+.nav-icon {
+    color: $text-white;
+	&:hover {
+		color: $color-primary;
+        cursor: pointer;
+	}
+}

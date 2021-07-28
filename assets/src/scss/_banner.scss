@@ -1,0 +1,13 @@
+.section-banner{
+	background: url(../../images/bg3.jpg) no-repeat left;
+	background-size: cover;
+	.banner-content{
+		h3{
+			@include font(30px,700);
+		}
+		max-width: 500px;
+		padding: 40px;
+		background: rgba(255, 255, 255,  0.16);
+		border-radius: 4px;
+	}
+}

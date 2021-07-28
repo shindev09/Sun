@@ -1,0 +1,64 @@
+.section-about{
+	background-color: $bg-dark;
+}
+.container-about {
+	display: flex;
+	padding: 48px 0;
+}
+.container-about-content {
+	padding: 10px 0 0 40px;
+}
+.container-about-img {
+	img {
+		width: 100%;
+		border-radius: 12px;
+	}
+}
+.about-title {
+	@include font(30px,bold);
+	color: $text-white;
+}
+.about-content {
+	color: $text-secondary;
+}
+.about-icon {
+	display: flex;
+	flex-direction: column;
+	padding-top: 16px;
+	margin-top: 24px;
+	.about-sticker {
+		color: $color-icon;
+		width: 100%;
+		@include flexBox(space-between);
+		i{
+			font-size: 38px;
+			margin-bottom: 10px;
+		}
+		.about-sticker-content{
+			h4 {
+				color: $text-white;
+				font-size: 22px;
+				margin-top: 10px;
+			}
+			p {
+				width: 100%;
+				color: $text-secondary;
+			}
+		}
+	}
+}
+
+// brand
+.brand-list {
+	border-top: 1px solid $border;
+}
+
+.logo-company{
+	a{
+		img{
+			background: #fff;
+			padding: 15px 10px;
+			border-radius: 4px;
+		}
+	}
+}

@@ -1,0 +1,41 @@
+.section-services{
+	background-color: $bg-dark-two;
+}
+.services-content{
+	cursor: pointer;
+	margin-top: 3rem;
+	&:nth-child(1) span {
+	color: #f85a40;
+	background: rgba(248, 90, 64, 0.05);
+	}
+	&:nth-child(2) span {
+		background: #5e5f6114;
+		color: #037ef3;
+	}
+	&:nth-child(3) span {
+		color: #00c16e;
+		background: rgba(0, 193, 110, 0.08);
+	}
+	.services-item{
+		@extend .section-about;
+		padding: 20px;
+		img{
+			border-radius: 10px;
+		}
+		span{
+			@include font(14px,600);
+			display: inline-block;
+			padding: 5px 20px;
+			border-radius: 15px;
+			margin: 20px 0;
+		}
+		h4{
+			@include font(1.4rem,500);
+			color: $text-white;
+			&:hover{
+				color: $color-icon;
+				transition: all 0.5s;
+			}
+		}
+	}	
+}
